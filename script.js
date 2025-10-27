@@ -10,7 +10,7 @@ const denyList=[helpRegex];
 checkMessageButton.addEventListener("click", () => {
   if (messageInput.value === "") {
     alert("Please enter a message.");
-    return;
+  return;
   }
 
   result.textContent = isSpam(messageInput.value)
